@@ -18,8 +18,8 @@ services:
       - mssql
     environment:
       SPRING_DATASOURCE_URL: jdbc:sqlserver://mssql:1433;databaseName=mssqlapplicationdb
-      SPRING_DATASOURCE_USERNAME: chaoticipher
-      SPRING_DATASOURCE_PASSWORD: Password123
+      SPRING_DATASOURCE_USERNAME: sa
+      SPRING_DATASOURCE_PASSWORD: yourStrong(!)Password
     ports:
       - "8080:8080"
     networks:
