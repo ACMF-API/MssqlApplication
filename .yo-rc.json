@@ -1,0 +1,26 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "baseName": "MssqlApplication",
+    "buildTool": "maven",
+    "cacheProvider": "hazelcast",
+    "clientFramework": null,
+    "clientPackageManager": null,
+    "clientTheme": null,
+    "creationTimestamp": 1735912282181,
+    "databaseType": "sql",
+    "enableHibernateCache": false,
+    "enableTranslation": false,
+    "entities": [],
+    "jhipsterVersion": "8.8.0",
+    "jwtSecretKey": "MDlkOTBkOTljNTU5MDliZGIwZTQ5Mjc1NjNlMmM1Yjc3NDAzODM4MzhlOTAzZTBjYTEwYTRlNWM1ZGZjZDYwYWI1MGNlYWU2YzhkMDk2Mjg3YTMwY2M0ZTRjZDNjNDNlMGQyYzU3YzZlZDJhYTZkOWIzMDM3ZjNkZDlmMzJlOTY=",
+    "microfrontend": false,
+    "nativeLanguage": "en",
+    "otherLanguages": null,
+    "prodDatabaseType": "mssql",
+    "reactive": false,
+    "serviceDiscoveryType": null,
+    "testFrameworks": null,
+    "websocket": null
+  }
+}

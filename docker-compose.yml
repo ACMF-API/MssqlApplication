@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Password123"
+    ports:
+      - "1433:1433"
+    networks:
+      - app-network
+
+  jhipster:
+    image: harshdwivedi295/mssqlapplication:latest
+    container_name: mssqlapplication
+    depends_on:
+      - mssql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:sqlserver://mssql:1433;databaseName=mssqlapplicationdb
+      SPRING_DATASOURCE_USERNAME: chaoticipher
+      SPRING_DATASOURCE_PASSWORD: Password123
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
