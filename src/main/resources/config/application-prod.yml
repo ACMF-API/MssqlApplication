@@ -33,7 +33,7 @@ spring:
       enabled: false
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:sqlserver://localhost:1433;database=MssqlApplication;encrypt=false
+    url: jdbc:sqlserver://localhost:1433;database=MssqlApplicationdb;encrypt=false
     username: SA
     password: yourStrong(!)Password
     hikari:
